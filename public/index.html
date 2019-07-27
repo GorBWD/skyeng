@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <script src="./public/js/script.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="subForm sherlock">
+            <div class="title">Учите английский по сериалу «Шерлок». Это бесплатно</div>
+            <div class="description">Email-курс с разбором каждой серии и упражнениями для тренировки</div>
+            <form method="post" action="/" onsubmit="submitSubscription(event, 'sherlock')">
+                <div class="application">
+                    <div class="field">
+                        <input type="name" name="name" placeholder="Как вас зовут?">
+                    </div>
+                    <div class="field">
+                        <input type="email" name="email" placeholder="Email">
+                        <span class="error-message hidden">Кажется, вы ввели несуществующий email</span>
+                    </div>
+                    <div class="field">
+                        <button type="submit" class="submit">Подписаться</button>
+                        <span class="signature">Нажимая, я принимаю условия соглашения</span>
+                    </div>
+                </div>
+            </form>
+
+            <p class="success-message hidden">Подздравляем, с подпиской на курс. Успехов в учебе! :)</p>
+        </div>
+
+
+        <div class="subForm lessons">
+            <div class="title">Учите английский для деловой переписки. Это бесплатно</div>
+            <div class="description">Email-курс о том, как эффективно общаться с коллегами и партнерами</div>
+            <form method="post" action="/" onsubmit="submitSubscription(event, 'lessons')">
+                <div class="application">
+                    <div class="field">
+                        <input type="name" name="name" placeholder="Как вас зовут?">
+                    </div>
+                    <div class="field">
+                        <input type="email" name="email" placeholder="Email">
+                        <span class="error-message hidden">Кажется, вы ввели несуществующий email</span>
+
+                    </div>
+                    <div class="field">
+                        <button type="submit" class="submit">Подписаться</button>
+                        <span class="signature">Нажимая, я принимаю условия соглашения</span>
+                    </div>
+                </div>
+            </form>
+
+            <p class="success-message hidden">Подздравляем, с подпиской на курс. Успехов в учебе! :)</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+@font-face {
+    font-family: "Museo Sans Cyrillic";
+    src: url("./fonts/MuseoSansCyrl_0.otf") format("opentype"), url("./fonts/MuseoSansCyrl_1.otf") format("opentype"), url("./fonts/MuseoSansCyrl_2.otf") format("opentype"), url("./fonts/MuseoSansCyrl_3.otf") format("opentype");
+}
+
+body {
+    margin: 50px;
+    font-family: "Museo Sans Cyrillic";
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.subForm {
+    padding: 5%;
+    margin-bottom: 20px;
+}
+
+.subForm .title {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bolder;
+}
+
+.subForm .description {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.subForm .application {
+    margin-top: 25px;
+}
+
+.subForm .application .field {
+    position: relative;
+    text-align: center;
+    flex-grow: 1;
+    padding: 0;
+    flex: 1;
+}
+
+.error-message {
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #FF0000;
+}
+
+.success-message {
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.hidden {
+    display: none;
+}
+
+.subForm .application .field input {
+    margin: 5px 0;
+    text-indent: 17px;
+    font-size: 14px;
+    line-height: 32px;
+    width: 100%;
+    height: 40px;
+    border: 2px solid;
+    box-sizing: border-box;
+}
+
+.subForm .application .field input::placeholder {
+    color: #000000;
+}
+
+.subForm .application .field button {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.subForm .application .field button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 8px;
+    top: 8px;
+    border: 2px solid;
+    box-sizing: border-box;
+}
+
+.subForm .application .field span.signature {
+    text-align: center;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+/* Sherlock */
+
+.subForm.sherlock .title,
+.subForm.sherlock .description {
+    color: #FFFFFF;
+}
+
+.subForm.sherlock .application .field input {
+    border: 2px solid #8145F4;
+}
+
+.subForm.sherlock .application .field button {
+    background: #8145F4;
+    border: 2px solid #8145F4;
+    color: #FFFFFF;
+}
+
+.subForm .application .field button::before {
+    border: 2px solid #8145F4;
+}
+
+.subForm.sherlock .application .field span.signature {
+    color: #FFFFFF;
+}
+
+
+/* Lessons */
+
+.subForm.lessons {
+    background: #EEEEEE;
+    box-shadow: 8px 8px 0px #5700FF;
+}
+
+.subForm.lessons .application .field input {
+    border: 2px solid #5700FF;
+}
+
+.subForm.lessons .application .field button {
+    background: #5700FF;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    border: 2px solid #5700FF;
+}
+
+.subForm.lessons .application .field button::before {
+    border: 2px solid #5700FF;
+}
+
+.subForm.lessons .success-message {
+    color: #000000;
+}
+
+
+/* PC */
+
+@media screen and ( min-width: 650px) {
+    .subForm .application {
+        margin-top: 25px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .subForm .application .field {
+        padding: 5px;
+    }
+    .subForm .application .field:first-child {
+        padding-left: 0;
+    }
+    .subForm .application .field:last-child {
+        padding-right: 0;
+        text-align: unset;
+    }
+    .subForm .application .field span.signature {
+        position: absolute;
+        text-align: center;
+        bottom: -25px;
+        width: 100%;
+    }
+    /* Sherlock */
+    .subForm.sherlock {
+        background: url('../img/sherlock-pc.png') no-repeat;
+        background-size: cover;
+    }
+}
+
+
+/* Mobile */
+
+@media screen and ( max-width: 650px) {
+    .subForm .application .field button {
+        margin-top: 20px;
+    }
+    .subForm.sherlock {
+        background: url('../img/sherlock-mobile.png');
+        background-size: cover;
+    }
+}
