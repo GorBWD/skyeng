@@ -1,16 +1,16 @@
 ### Setup steps!
 
 1. Install Dependencies
-``sh
+```sh
 php composer.phar install
-``
+```
 
-2. Update credentials in token.json
+2. Create and update credentials in `token.json`
 
 3. Launch Application
-``sh
+```sh
 php -S localhost:8080
-``
+```
 
 Now you can see app at http://localhost:8080/
 
